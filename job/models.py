@@ -21,6 +21,12 @@ JOB_TYPE = (
     ('full-time', 'Full Time'),
     ('part-time', 'Part Time')
     )
+    
+class Category(models.Model):
+        name = models.CharField(max_length=100)
+        def __str__(self):
+            return self.name
+
 class Job(models.Model): #table
     title = models.CharField(max_length=100) #column
     description = models.TextField()
@@ -31,5 +37,7 @@ class Job(models.Model): #table
     # company = models.CharField(max_length=100)
     published_at = models.DateTimeField(auto_now=True)
     vacancy = models.IntegerField(default=1)
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, null=True)
+    
     def __str__(self):
         return self.title

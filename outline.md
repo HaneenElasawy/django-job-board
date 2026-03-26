@@ -28,3 +28,10 @@ contact
 home
 
 login
+
+
+
+Relations :
+    -One to many  [user-posts]   foreginkey
+    -Many to many [user-groups]
+    -One to one   [user-profile]
