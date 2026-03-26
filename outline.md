@@ -1,14 +1,14 @@
-
--titile
--location
--job type 
--description
--published at 
--vacancy "position"
--salary
--category
--experience
--gender
+job:
+    -titile
+    -location
+    -job type 
+    -description
+    -published at 
+    -vacancy "position"
+    -salary
+    -category
+    -experience
+    -gender
 
 -apply job 
 -post job
