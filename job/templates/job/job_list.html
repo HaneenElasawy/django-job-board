@@ -122,7 +122,7 @@
                                             <img src="" alt="">
                                         </div>
                                         <div class="jobs_conetent">
-                                            <a href="{% url 'job:job_detail' job.id %}"><h4>{{ job.title }}</h4></a>
+                                            <a href="{% url 'job:job_detail' job.slug %}"><h4>{{ job.title }}</h4></a>
                                             <div class="links_locat d-flex align-items-center">
                                                 <div class="location">
                                                     <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -136,7 +136,7 @@
                                     <div class="jobs_right">
                                         <div class="apply_now">
                                             <a class="heart_mark" href="#"> <i class="fa fa-heart"></i> </a>
-                                            <a href="{% url 'job:job_detail' job.id %}" class="boxed-btn3">Apply Now</a>
+                                            <a href="{% url 'job:job_detail' job.slug %}" class="boxed-btn3">Apply Now</a>
                                         </div>
                                         <div class="date">
                                             {% comment %} <p>Date line: 31 Jan 2020</p> {% endcomment %}
